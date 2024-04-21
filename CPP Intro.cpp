@@ -1,6 +1,17 @@
 #include <iostream>
 
+
+/*name spaces allow variables with same name, but different value
+    can be accessed with nameSpace name::variable name*/
+    namespace top{
+        int x=5;
+    }
+    namespace bottom{
+        int x=3;
+    }
+
 int main(){
+    
 
     //variables are similar to other languages
     int x=5;//integrr
@@ -18,6 +29,7 @@ int main(){
     int radius  = 3;
     double area = PI*(radius*radius);
 
+
     
     std::cout << x << '\n';
     std::cout << gpa << '\n';
@@ -26,6 +38,8 @@ int main(){
     std::cout << std::boolalpha << off <<'\n';
     std::cout << str << '\n';
     std::cout << area << '\n';
+    std::cout << bottom::x<<'\n';
+    std::cout << top::x<<'\n';
     
     return 0;
     
