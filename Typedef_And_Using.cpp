@@ -9,7 +9,7 @@ using text_t = std::string;
 
 int main(){
     
-    /*pairlist creates new identitfier for datatype
+    /*pairlist creates new identitfier for datatype, helps readability
     pairlist_t pairlist;*/
 
     text_t name="Lance";//behaves like string
