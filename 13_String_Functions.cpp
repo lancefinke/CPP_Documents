@@ -29,4 +29,5 @@ int main(){
 
     //string.erase(start index,end index) chooses characters to delete. 
 
+    //usefule website: www.cplusplus.com/reference/string/
 }
