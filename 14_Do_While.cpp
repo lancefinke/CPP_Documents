@@ -11,7 +11,7 @@ int main(){
         cin>>number;
     }while(number<0);
 
-    cout<< "The Number is zero";
+    cout<< "The Number is "<<number;
 
     return 0;
 }
