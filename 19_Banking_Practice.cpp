@@ -61,6 +61,7 @@ double deposit(){
     else{
         cout<<"That's not a valid amount\n";
     }
+    return 0;
 }
 
 double withdraw(double balance){
@@ -75,7 +76,7 @@ double withdraw(double balance){
 
         else{
             cout<<"Insufficient Funds or not valid amount\n";
-            return 0;
         }
+    return 0;
 }
 
