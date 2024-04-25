@@ -3,7 +3,7 @@
 using namespace std;
 
 void HappyBirthday(string name, int age);//needs to be declared here to be written after main function, otherwise it's not necessary.
-
+void HappyBirthday(string name);
 
 
 int main(){
@@ -18,4 +18,10 @@ void HappyBirthday(string name, int age){
     cout<<"Happy Birthday to you\nHappy Birthday to you\nHappy Birthday dear "<<name<<"\nHappy Birthday to you"<<endl;
     cout<<name<<" is "<<age<<" years old.";
 
+}
+
+//overloading:
+
+void HappyBirthday(string name){
+    cout<<"Happy Birthday to you\nHappy Birthday to you\nHappy Birthday dear "<<name<<"\nHappy Birthday to you"<<endl;
 }
