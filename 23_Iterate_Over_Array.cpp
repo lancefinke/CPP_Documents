@@ -8,10 +8,12 @@ int main(){
 
     int studentsLen = sizeof(students)/sizeof(string);
 
+    //for loop
     for(int i=0;i<studentsLen;i++){
         cout<<students[i]<<"\n";
     }
 
+    //for each
     for(string s : students){
         cout<<s<<"\n";
     }
