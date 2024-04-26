@@ -11,7 +11,7 @@ int main(){
 
     swap(x,y);
     //passing variable to function only passes value, not actual variable
-    //reference uses memory addres
+    //reference uses memory address to place actual vaiable in method
     
     cout<<"x: "<<x<<"\ny: "<<y<<endl;
 
