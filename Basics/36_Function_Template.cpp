@@ -11,11 +11,11 @@ void Print(T value){
     cout<<value<<endl;
 }
 
-template<int N>
+template<typename T , int N>
 class Array
 {
 private:
-    int myArray[N];
+    T myArray[N];//creates array of type T and size N
 
 public:
     int getSize() const {return N;}
@@ -29,12 +29,14 @@ public:
 int main(){
 
     //used to create a function that is similar but takes in different types
-    Print<int>(5);//type int is specified, not always necessary
+    Print<int>(10);//type int is specified, not always necessary
     
-    Array<5> array;//creates array class with length of 5;
+    Array<int,5> array;//creates array class of ints with length of 5;
     cout<<array.getSize()<<endl;
 
 
     return 0;
 }
+
+
 
