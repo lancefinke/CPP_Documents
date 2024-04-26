@@ -17,7 +17,7 @@ public:
     int getNum(){
         return a*3;
     };
-    void toString(){
+    virtual void toString(){
         std::cout<<"Number: "<<a<<endl;
     }
 };
@@ -36,7 +36,7 @@ public:
         return word;
     }
 
-    void toString(){
+    void toString() override{
         std::cout<<"Number: "<<this->getNum()<<" Word: "<<word<<endl;
     }
 };
