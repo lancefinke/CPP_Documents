@@ -23,7 +23,7 @@ int main(){
     std::vector<int> nums = {1,6,8,3,2,9};
 
     //example when lambda is useful
-    auto firstEven = std::find_if(nums.begin(),nums.end(), [](int value){return value%2==0;});
+    auto firstEven = std::find_if(nums.begin(),nums.end(), /*lambda function*/ [](int value){return value%2==0;});
     cout<<*firstEven<<endl;
 
     return 0;
