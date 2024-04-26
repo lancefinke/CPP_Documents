@@ -55,6 +55,12 @@ int main(){
         cout<<name<<", Population: "<<city.population<<endl;
     }
 
+    //remove entries:
+    cities.erase("Stockholm");
+
+    
+
+
 
 
 

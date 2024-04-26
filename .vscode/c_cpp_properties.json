@@ -3,7 +3,8 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "C:\\Libraries\\glfw-3.4.bin.WIN32\\include\\GLFW"
             ],
             "defines": [
                 "_DEBUG",
@@ -19,7 +20,8 @@
         {
             "name": "win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "C:\\Libraries\\glfw-3.4.bin.WIN32\\include\\GLFW"
             ],
             "defines": [
                 "_DEBUG",
