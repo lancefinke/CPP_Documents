@@ -8,13 +8,17 @@ using std::endl;
 class Car
 {
 
+//can only be accessed in class
 private:
     std::string m_make;
     std::string m_model;
     std::string m_year;
     int m_miles;
     std::string m_color;
+
 public:
+
+    //constructor
     Car(){
         this->m_make = "Ford";
         this->m_model="F-150";
@@ -31,9 +35,16 @@ public:
         this->m_color = color;
 
     }
+    //destructor:
+    ~Car(){
+        cout<<"Destoryed Car"<<endl;
+    }
+
+    //getter
     std::string getColor(){
         return m_color;
     }
+    //setter
     void paint(std::string color){
         m_color=color;
     }
@@ -54,6 +65,35 @@ public:
     }
 };
 
+//inheritance:
+class SportCar : public Car
+{
+
+private:
+    int m_HP;
+    int m_topSpeed;
+    float m_displacement;
+public:
+    SportCar(std::string make,std::string model,std::string year,int miles,std::string color,int HP, int topSpeed, float displacement):
+    Car(make,model,year,miles,color) {this->m_HP=HP;
+                                      this->m_topSpeed=topSpeed;
+                                      this->m_displacement=displacement;}
+    
+    int getHP(){
+        return m_HP;
+    }
+    int getTopSpeed(){
+        return m_topSpeed;
+    }
+    float getDisplacement(){
+        return m_displacement;
+    }
+
+    ~SportCar(){};
+
+    
+};
+
 int main(){
 
     Car car("Toyota","Corolla","2024",100,"White");
@@ -66,7 +106,19 @@ int main(){
     cout<<car.getMiles()<<endl;
     car.drive(50);
     cout<<car.getMiles()<<endl;
-    
+    car.~Car();
+
+    SportCar fastCar("Chevrolet","Corvette","2023",10500,"Red",670,195,5.5f);
+
+    cout<<fastCar.getMake()<<endl;
+    cout<<fastCar.getColor()<<endl;
+    fastCar.paint("Blue");
+    cout<<fastCar.getColor()<<endl;
+    cout<<fastCar.getHP()<<endl;
+    cout<<fastCar.getTopSpeed()<<endl;
+    cout<<fastCar.getDisplacement()<<endl;
+
+    fastCar.~SportCar();
 
     return 0;
 }
