@@ -37,7 +37,7 @@ int main(){
     //adds values
     points.emplace_back(1,2);//creates an object based on parameters.
     points.emplace_back(5,3);//more strage efficient
-    Position *pPos = new Position(4,8);
+    Position* pPos = new Position(4,8);
     points.push_back(*pPos);
     printVector(points);
     points.erase(points.begin()+1);//removes second element
